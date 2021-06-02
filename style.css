@@ -1,0 +1,35 @@
+body {
+    background: black;
+}
+.space {
+    background-image: url("image/space.png");
+    background-size: contain;
+    background-clip: padding-box;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+.planet-area {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.planet {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    width: 30%;
+    bottom: 0;
+    left: 0;
+}
+.rocket {
+    display: flex;
+    position: absolute;
+    z-index: 0;
+    width: 10%;
+    bottom: 25%;
+    left: 15%;
+    transform: rotate(20deg);
+}
