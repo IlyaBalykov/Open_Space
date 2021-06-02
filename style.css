@@ -1,7 +1,11 @@
 body {
     background: black;
 }
+/*Space and planet area*/
 .space {
+    display: flex;
+    flex-direction: row;
+    position: relative;
     background-image: url("image/space.png");
     background-size: contain;
     background-clip: padding-box;
@@ -13,8 +17,10 @@ body {
 .planet-area {
     display: flex;
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 60%;
+    top: 40%;
+    left: 0;
 }
 .planet {
     display: flex;
@@ -32,4 +38,64 @@ body {
     bottom: 25%;
     left: 15%;
     transform: rotate(20deg);
+}
+/*Control panel*/
+.control-panel {
+    background-color: dodgerblue;
+    border-radius: 2%;
+    width: 40%;
+    height: 45%;
+    margin-top: 10%;
+    margin-right: 5%;
+    padding: 2em 1em 1em 1em;
+    text-align: center;
+}
+.text {
+    border: none;
+    height: 35px;
+    width: 180px;
+    text-align: center;
+    color: dodgerblue;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.button {
+    color: dodgerblue;
+    border: none;
+    border-radius: 8px;
+    height: 35px;
+    width: 65px;
+    margin-top: 20px;
+}
+input {
+    border-radius: 10px;
+    height: 20px;
+    width: 20%;
+}
+.check-buttons {
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: gainsboro;
+    border-radius: 10px;
+    width: 100%;
+    min-height: 20%;
+    max-height: 30%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.levers {
+    display: flex;
+    background-color: gainsboro;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 35%;
+}
+.levers > input {
+    transform: rotate(-90deg);
+    margin-right: 0;
+    width: 18%;
+    height: 70%;
 }
